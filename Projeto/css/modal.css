@@ -1,0 +1,46 @@
+.modalDialog {/*parte de fundo da modal que escurece*/
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  opacity:0;
+  pointer-events: none;
+  
+}
+
+.modalDialog:target {/*ao clicar na referencia abre o modal*/
+  opacity:1;
+  pointer-events: auto;
+
+}
+
+.modalDialog > div {/*miolo do modal*/
+  overflow: auto;
+  width: 400px;
+  height: 700px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+.closeModal {/* fecha modal*/
+  background:red;
+  color: white;
+  position: absolute;
+  text-align: center;/*alinha o 'x'*/
+  top: 10px;
+  width: 24px;
+  border-radius: 20px;/*circulo do 'x'*/
+}
+
+.closeModal:after {/*Insere X como texto para referencia do clique*/
+  content: "X";
+
+}
+
