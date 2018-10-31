@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html>
-
+<meta charset="utf-8">
 <head>
-	<title></title>
+	<title>Sistema Laboral</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css" >
+		
+
 </head>
 
 <body>
-	
 		
-		<header><!--cabeçalho ao qual aparece os logos do Estado-->
-				
-			<h2  align="center">
-				<!--div do 1°logo-->
-					<img id="img1" src="img/sc.png"> 				 
-					Estado de Santa Catarina				
-				<!-- 2°logo -->
-					<img id="img2"src="img/deap.png">			
-				<!--alinha "estado de santa catarina"-->
-				<h3 align="center">
+	<header><!--cabeçalho ao qual aparece os logos do Estado-->
+			
+		<h2  align="center">
+			<!--div do 1°logo-->
+			<img id="img1" src="img/sc.png"> 				 
+				Estado de Santa Catarina				
+			<!-- 2°logo -->
+			<img id="img2"src="img/deap.png">			
+			<!--alinha "estado de santa catarina"-->
+			<h3 align="center">
 				Secretaria de Estado da Justiça e Cidadania<br>
 				Departamento de Administração Penitenciaria<br>
 				Gerenciamento de Atividades Laborais 
-				</h3>	
-					</h2>	
+			</h3>	
+		</h2>	
 
-		</header>
+	</header>
 	
-		<nav id="menu" class="menu" align="center"><!--menu com os link que por enquanto so ira chamar a lista de presenças-->		
+	<nav id="menu" class="menu" align="center"><!--menu com os link que por enquanto so ira chamar a lista de presenças-->		
 	<!-- tag <a> com uma img dentro-->
-			<a href="#openModal"><img class="icone" src="img/listaDeChamada.png"></a>
-			<a href=""><img class="icone" src="img/internos.png"></a>
-			<a href=""><img class="icone" src="img/atendimento.png"></a>
-			<a href=""><img class="icone" src="img/ferramentas.png"></a>
-			<a href=""><img class="icone" src="img/saldo.png"></a>
-			<a href=""><img class="icone" src="img/livro.png"></a>
-			<a href=""><img class="icone" src="img/RO.png"></a>			
-		</nav> 
+		<a href="#openModal" style="text-decoration:none"><img class="icone" src="img/listaDeChamada.png"><br>Chamada</a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/internos.png"><br>Incluir</a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/atendimento.png"><br>Atendimento</a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/ferramentas.png"><br>Ferramentas </a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/saldo.png"><br>Saldo</a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/livro.png"><br>Livro</a>
+		<a href="" style="text-decoration:none"><img class="icone" src="img/RO.png"><br>R.O</a>	
+				    
+	</nav> 
+			
+			
 
+	<div id="fundo" >
+		<!--div do fundo-->					
+		<img   id="logofundo" src="fundoSC.png" >
 
-							<div id="fundo">
-								<!--div do fundo-->					
-								<img  id="logofundo" src="fundoSC.png" >
+	</div>
 
-							</div>
-
-		    <div id="openModal" class="modalDialog">
+    <div id="openModal" class="modalDialog">
       <div>
         <a href="#close" title="Close" class="closeModal"></a>
         <!-- Conteúdo do Modal -->
         <h2 align="center">Lista de Chamada</h2>
-<input type="checkbox" /> Aécio Neves <br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Adriano José<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Adriano da Silva<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Alberto Morais<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Abelardo de Souza<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Bruno Henrique Delabona<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Bento Gonzalves<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Bruno Otero<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Garcia Marques<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Luiz Inácio<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-<input type="checkbox" /> Henrique Meirelles<br />
-<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Aécio Neves <br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Adriano José<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Adriano da Silva<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Alberto Morais<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Abelardo de Souza<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Bruno Henrique Delabona<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Bento Gonzalves<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Bruno Otero<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Garcia Marques<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Luiz Inácio<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
+		<input type="checkbox" /> Henrique Meirelles<br />
+		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
         <!-- Conteúdo do Modal -->
       </div>
-   </div>
+    </div>
 
     <footer>
 		<small>
-			<font color="white"> 
+			<font id="rodape" color="white"> <br><br>
+				SJC - DEAP Sistema Humanizado, Cidadania Respeitada<br>
+				Endereço: Pedro João Pinto, SN- Bairro Canhanduba- Itajaí-SC- CEP:88307-770<br>
+				Telefone(047)3363-4852- Email: laboralcpvi@gmail.com<br>
 					copyright 2018 | Maico Roberto Ruaro
 		 </small><br>
-		<a href="maicojohannruaro@gmail.com">maicojohannruaro@gmail.com</a>
+		
 			</font>
 	</footer>
-	</div>
+	
 
 </body>
 
