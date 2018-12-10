@@ -4,13 +4,12 @@
 <head>
 	<title>Sistema Laboral</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="css/modal.css" >
 	<link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">	
 </head>
+
 
 <body>
 		
@@ -27,50 +26,79 @@
 							<img id="img2"src="img/deap.png">	
 	</header>
 <!------------------------------------------MENU----------------------------------------------------------->
-		<nav id="flex-menu" class="menu" align="center">
-		<!-- tag <a> com uma img dentro-->
-			<a href="#openModal" style="text-decoration:none"><img class="icone" src="img/listaDeChamada.png"><br>Chamada</a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/internos.png"><br>Incluir</a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/atendimento.png"><br>Atendimento</a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/ferramentas.png"><br>Ferramentas </a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/saldo.png"><br>Saldo</a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/livro.png"><br>Livro</a>
-			<a href="" style="text-decoration:none"><img class="icone" src="img/RO.png"><br>R.O</a>				    
+		<nav class="navbar navbar-dark bg-primary" id="flex-menu" class="menu" align="center">
+		<!-- tag <a> com uma img dentro
+			<a href="#openModal" data-toggle="modal" data-target="#modal-mensagem" style="text-decoration:none"><img class="icone" src="img/listaDeChamada.png"><br>Chamada</a>-->
+			<a data-toggle="modal" data-target="#modal-mensagem" class="fontMenu">Exibir mensagem</a>
+			<a data-toggle="modal" data-target="#modal-mensagem" class="fontMenu">Incluir</button>
+			<a data-target="#modal-mensagem" class="fontMenu">Atendimento</a>
+			<a data-target="#modal-mensagem">Ferramentas </a>
+			<a data-target="#modal-mensagem">Saldo</a>
+			<a data-target="#modal-mensagem">Livro</a>
+			<a data-target="#modal-mensagem">R.O</a>				    
 		</nav> 
-<!----------------------------------------div do fundo----------------------------------------------------->					<div id="fundo" >						
-				<img   id="logofundo" src="fundoSC.png" >
-					</div>
+<!----------------------------------------div do fundo----------------------------------------------------->					
+			<div id="flex-fundo" >						
+				<img   id="logofundo" src="fundoSC.png" >		
+			</div>
 <!-----------------------------------Primeira Modal da Chamada--------------------------------------------->
-    <div id="openModal" class="modalDialog">
-      <div>
-        <a href="#close" title="Close" class="closeModal"></a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--Referência à biblioteca jQuery-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!--referência ao arquivo JavaScript do Bootstrap-->	 
+    <div class="modal fade" id="modal-mensagem">
+      <div class="modal-dialog">
+      	<div class="modal-content">
+      		<div class="modal-header"><!--Cabeçalho da modal-->
+	      		<button type="button" class="close" data-dismiss="modal"><span>x</span></button><!--Acrescenta o 'x' que fecha a modal-->
+	       		<h4>Quantidade</h4><input type="text" style="text-align:center" id="quantidade">
+	       		<h4 class="modal-title">Lista de Chamada</h4>
+	       	</div>	
         <!-- Conteúdo do Modal -->
-        <h2 align="center">Lista de Chamada</h2>
-		<input type="checkbox" /> Aécio Neves <br />
+    <div class="modal-body">
+		<input type="checkbox" value="1" /> Aécio Neves <br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Adriano José<br />
+		<input type="checkbox" value="1" /> Adriano José<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Adriano da Silva<br />
+		<input type="checkbox" value="1"/> Adriano da Silva<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Alberto Morais<br />
+		<input type="checkbox" value="1"/> Alberto Morais<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Abelardo de Souza<br />
+		<input type="checkbox" value="1"/> Abelardo de Souza<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Bruno Henrique Delabona<br />
+		<input type="checkbox" value="1"/> Bruno Henrique Delabona<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Bento Gonzalves<br />
+		<input type="checkbox" value="1"/> Bento Gonzalves<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Bruno Otero<br />
+		<input type="checkbox" value="1"/> Bruno Otero<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Garcia Marques<br />
+		<input type="checkbox" value="1"/> Garcia Marques<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Luiz Inácio<br />
+		<input type="checkbox" value="1"/> Luiz Inácio<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
-		<input type="checkbox" /> Henrique Meirelles<br />
+		<input type="checkbox" value="1"/> Henrique Meirelles<br />
 		<font size="2"><i><b>Galeria D - Cela 18 - IPEN 123456789</b><br></i></font><br><hr>
         <!-- Conteúdo do Modal -->
+    </div>
+        <!--Script Contador-->
+       <script type="text/javascript">
+        var total = 0;
+		//Chama a função com click em qualquer checkbox
+				$(':checkbox').click(function() {
+ 				 //Atribui o valor do input p/ variável 'valor'
+  					var valor = parseInt($(this).val());
+ 				 //Se o checkbox for marcado ele soma se não subtrai
+  					if ($(this).is(":checked")) {
+  						  total += valor;
+ 					 } else {
+   							 total -= valor;
+ 								 }
+ 					//Atribui o valor ao input
+ 							 $("#quantidade").val(total);
+					});
+		</script>
+
       </div>
     </div>
+</div>
 
     <footer>
 		<small>
@@ -84,6 +112,12 @@
 			</font>
 	</footer>
 	
+
+
+
+
+
+
 
 </body>
 

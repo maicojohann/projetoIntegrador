@@ -31,12 +31,16 @@ h2{
  }
 
 /*----------------Menu------------*/
+a{
+
+	background-color: black;
+}
  #flex-menu {
 
  	display: flex;/*define conteinar*/
  	flex-direction: row;/*ícones alinhados*/	
 	justify-content: space-around;/*espaçamentos entre os icones*/
- }
+}
 
 
 .menu img:hover {/*aqui aumenta os icones ao passar o mouse*/
@@ -55,23 +59,21 @@ h2{
 }
 
 
-
  /*--------Estrutura de corpo abaixo do menu, descanso das modais---------*/
-#fundo{
+#flex-fundo{
 	display: flex;
-	background-color:#33CCFF;
+	background-color:#FFFFFF;
 	position: relative;
 	opacity: 0.2;
 
 
 }
 
+
 #logofundo{/*logo centralizado no meio do descanso de fundo*/
-	
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	
-}
 /*-------------Rodapé--------------*/
 footer {
 
@@ -84,3 +86,7 @@ footer {
 
 }
 
+body{
+
+width: 	100%;
+}
